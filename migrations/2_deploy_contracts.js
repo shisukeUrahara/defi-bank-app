@@ -10,12 +10,12 @@ module.exports = async function(deployer,_network,accounts) {
 // deploy the dai token contract
 await deployer.deploy(DaiToken);
 let daiToken=await  DaiToken.deployed();
-console.log("**@ dai token address is , ",daiToken.address);
+// console.log("**@ dai token address is , ",daiToken.address);
 
 // deploy the dapp token contract
 await deployer.deploy(DappToken);
 let dappToken=await  DappToken.deployed();
-console.log("**@ dapp token address is , ",dappToken.address);
+// console.log("**@ dapp token address is , ",dappToken.address);
 
 
 
